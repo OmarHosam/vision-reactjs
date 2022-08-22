@@ -1,0 +1,44 @@
+.not-found {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.not-found * {
+    margin-bottom: 20px;
+}
+
+.not-found h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #abafad;
+}
+
+.not-found p {
+    font-size: 25px;
+    color: #abafad;
+}
+
+.not-found h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #abafad;
+}
+
+.not-found a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #abafad;
+    padding: 5px;
+    border: 1px solid #abafad;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.not-found a:hover {
+    background: #abafad;
+    color: black;
+}

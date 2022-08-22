@@ -1,0 +1,149 @@
+@-webkit-keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        visibility: visible;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        visibility: visible;
+    }
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 85%;
+    height: 70vh;
+    padding: 1rem;
+}
+
+.right-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-main-color);
+}
+
+.right-container h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.right-container * {
+    margin-bottom: 1.5rem;
+}
+
+.right-container i {
+    margin-bottom: 0;
+}
+
+.right-container p {
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.right-container button {
+    background: var(--button-main-color);
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-container button:hover {
+    background: #545052;
+    color: white;
+}
+
+@media (max-width: 969px) {
+    .right-container {
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .right-container {
+        width: 100%;
+        align-items: right;
+        justify-content: center;
+    }
+
+    .right-wrapper {
+        padding-bottom: 15px;
+        padding: 15px;
+    }
+
+    .right-container::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .right-container h3 {
+        font-size: 3rem;
+    }
+
+    .right-container {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+
+    .right-container p {
+        font-size: 16px;
+    }
+
+    .right-wrapper h2 {
+        font-size: 6rem;
+    }
+
+    .right-container button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .right-wrapper h2 {
+        font-size: 5rem;
+    }
+
+    .right-container h3 {
+        font-size: 2.5rem;
+    }
+
+    .right-container p {
+        font-size: 14px;
+    }
+}
